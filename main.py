@@ -14,11 +14,23 @@ studentdata = pd.read_csv('HEA_Student_Enrolment_Data_Domicilary_Origin_2018-19.
 
 # Section 3 Create the DataFrame
 df = pd.DataFrame(studentdata)
-print(df.head())
+
+check1 = df.shape
+check2 = df.info()
+check3 = df.describe()
+check4 = df.values
+check5 = df.columns
+check6 = df.index
+
+# print(check1)
+# print(check2)
+# print(check3)
+print(check4)
+print(check5)
+print(check6)
 
 # Section 3a Clean up the DataFrame
-numbers=["Number of Students"]
-print(numbers)
+
 
 # Section 4 Analyse the Data
 
@@ -31,5 +43,3 @@ print(numbers)
 # 4g Enrolment by SE Counties by Institution
 # 4h Enrolment by SE Counties by INstitution by DIscipline
 # 4i Brain Drain
-
-
